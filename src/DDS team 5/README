@@ -1,0 +1,29 @@
+Project: Distributed Data Structures (DDS)
+Project Team #5:
+Caelan Quach
+Maden Edaugal
+Alicia Martinez
+
+
+1.  Make sure that EchoClient and EchoServer is set up to be able to have multiple instances
+    do this (for IntelliJ ide) by going to Run, Edit Configurations, Check the box that Allows Multiple Instances.
+    This will allow us to have four clients and two servers.
+
+2.  Run EchoServer. The maximum is three servers
+	- Make sure that EchoServer is configured to run with the server_config.json in its arguments
+
+3.  Run EchoClient. The server ip is localhost.
+
+4.  The server port is created in the EchoServer.
+
+5.  Type messages.  The server will echo the messages typed at the
+    client, and will indicate which client sent each message:
+
+    view - print data structure
+    log (client/server) - prints the client or server logs
+    add (number) - adds number to the end of indexed list
+    remove (index) - removes index from the list
+    insert (number) (index) - inserts a number at a given time
+    commit - saves current data structures
+    rollback - loads previously saved data structure
+    EXIT - closes the client
